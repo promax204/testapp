@@ -8,6 +8,9 @@
     "declaration": true,
     "inlineSources": true,
     "types": [],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "lib": [
       "dom",
       "es2015"
@@ -15,10 +18,10 @@
   },
   "angularCompilerOptions": {
     "annotateForClosureCompiler": true,
-    "skipTemplateCodegen": true,
-    "strictMetadataEmit": true,
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true,
+    "skipTemplateCodegen": false,
+    "strictMetadataEmit": false,
+    "fullTemplateTypeCheck": false,
+    "strictInjectionParameters": false,
     "enableResourceInlining": true
   },
   "exclude": [

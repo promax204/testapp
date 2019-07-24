@@ -77,18 +77,3 @@ export class TableCtrl implements OnInit {
     console.log('settt  this thing', this);
   }
 }
-export class TableMeta {
-    instance:any;
-    constructor() {}
-    init(a){
-      this.instance = a;
-    }
-    set(){
-      return this;
-    }
-    exec(){
-        return new Promise((result, reject)=>{
-            setTimeout(()=>result(), 0);
-        })
-    }
-}

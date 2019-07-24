@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 // import { MyLibModule } from 'adap-tools/my-lib';
 import { CoreModule } from 'adap-tools/core';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
   ],
   imports: [
     BrowserModule, 
-    CoreModule, BsDropdownModule.forRoot()
+    CoreModule, BsDropdownModule.forRoot(), FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],

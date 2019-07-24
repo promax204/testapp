@@ -156,6 +156,11 @@
       "root": "projects/core",
       "sourceRoot": "projects/core/src",
       "prefix": "lib",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },    
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",

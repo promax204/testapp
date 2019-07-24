@@ -4,7 +4,7 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "module": "esnext",
@@ -18,15 +18,10 @@
     "lib": [
       "es2018",
       "dom"
-    ],
-    "paths": {
-      "core/*": [
-        "dist/core/*"
-      ]
-    }
+    ]
   },
   "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "fullTemplateTypeCheck": false,
+    "strictInjectionParameters": false
   }
 }
