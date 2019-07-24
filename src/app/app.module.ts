@@ -5,7 +5,9 @@ import { AppComponent } from './app.component';
 // import { TableCtrl } from './datatable';
 // import { TableCtrl } from 'adap-tools/core';
 
-import { MyLibModule } from 'adap-tools/my-lib/';
+// import { MyLibModule } from 'adap-tools/my-lib';
+import { CoreModule } from 'adap-tools/core';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 @NgModule({
   declarations: [
@@ -13,13 +15,11 @@ import { MyLibModule } from 'adap-tools/my-lib/';
   ],
   imports: [
     BrowserModule, 
-    MyLibModule
+    CoreModule, BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [
-    CUSTOM_ELEMENTS_SCHEMA,
-    NO_ERRORS_SCHEMA
   ]
 })
 export class AppModule { }

@@ -1,5 +1,5 @@
 {
-  "name": "adap-tools/my-lib",
+  "name": "adap-tools/core",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^8.1.2",

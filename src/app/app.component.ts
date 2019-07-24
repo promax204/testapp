@@ -2,7 +2,7 @@ import { Component, ElementRef, OnInit, AfterViewInit, AfterContentInit } from '
 // import { TableMeta } from './datatable';
 // import { TableMeta } from 'adap-tools/core';
 
-// import * as jsdata from './customer.json';
+import * as jsdata from './customer.json';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { Component, ElementRef, OnInit, AfterViewInit, AfterContentInit } from '
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'root';
+  title:any = 'root';
   // customer:TableMeta=new TableMeta;
   // Qcustomer:TableMeta=new TableMeta;
   constructor() {}
@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
 
     //   let tmp=this.customer.instance;
     //   console.log('inner', this);
-    //   tmp.title='awwww';
+    //   //tmp.title='awwww';
     //   tmp.data=jdata;
     //   tmp.menu=[
     //     {name:'ID',tindex:'id',type:'text'},
